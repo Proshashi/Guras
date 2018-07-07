@@ -11,6 +11,31 @@ html {
   line-height: 1.7;
   font-weight: 400; }
 
+@media only screen and (max-width: 86em) {
+  html {
+    font-size: 50%; } }
+
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none; }
+
+.btn {
+  font-size: 1.6rem;
+  padding: .8rem 3rem;
+  border-radius: 26px;
+  background-color: #F3737C;
+  color: #fff;
+  border: none;
+  font-family: roboto;
+  outline: none;
+  cursor: pointer;
+  transform: scale(1); }
+  .btn:hover {
+    box-shadow: 0 5px 20px #979797;
+    transform: translateY(-0.1rem); }
+  .btn:active {
+    box-shadow: none;
+    transform: scale(1.01); }
+
 @font-face {
   font-family: calibri;
   src: url(../fonts/calibri/Calibri.ttf); }
@@ -78,11 +103,12 @@ html {
     color: #676767; }
   .services__row {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem 4rem; }
+    flex-wrap: wrap;
+    padding: 1rem 5rem; }
     .services__row--card {
+      margin: 0 3.25rem;
       border-radius: 10px;
-      width: 40rem;
+      width: 35rem;
       height: 53.7rem;
       padding: 2.3rem;
       display: flex;
@@ -117,20 +143,3 @@ html {
           height: 1px;
           border: none;
           outline: none; }
-      .services__row--card-btn {
-        font-size: 1.6rem;
-        padding: .8rem 3rem;
-        border-radius: 26px;
-        background-color: #F3737C;
-        color: #fff;
-        border: none;
-        font-family: roboto;
-        outline: none;
-        cursor: pointer;
-        transform: scale(1); }
-        .services__row--card-btn:hover {
-          box-shadow: 0 5px 20px #979797;
-          transform: translateY(-0.1rem); }
-        .services__row--card-btn:active {
-          box-shadow: none;
-          transform: scale(1.01); }
