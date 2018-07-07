@@ -1,14 +1,6 @@
-@import "variables";
-@import "land";
-@import "services";
-@import "features";
-@import "contact";
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
+@import "./reset";
+@import "./variables";
+@import "./land";
+@import "./services";
+@import "./features";
+@import "./contact";
