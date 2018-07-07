@@ -1,28 +1,63 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
 
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    line-height: 1.7;
-    font-weight: 400;
-}
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+            line-height: 1.7;
+            font-weight: 400;
+        }
 
-body {
-  background-color: #F6F6F6;
-}
+        body {
+            background-color: #f6f6f6;
+        }
 
-@font-face {
-    font-family: calibri;
-    src: url(../fonts/calibri/Calibri.ttf);
-}
+        // @media only screen and (max-width: 86em) {
+        //     html {
+        //         // font-size: 50%;
+        //     }
+        // }
+        a {
+            &:link,
+            &:visited,
+            &:active,
+            &:hover {
+                text-decoration: none;
+            }
+        }
 
-@font-face {
-  font-family: roboto;
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
-}
+        .btn {
+            font-size: 1.6rem;
+            padding: .8rem 3rem;
+            border-radius: 26px;
+            background-color: #F3737C;
+            color: #fff;
+            border: none;
+            font-family: roboto;
+            outline: none;
+            cursor: pointer;
+            transform: scale(1);
+            &:hover {
+                box-shadow: 0 5px 20px $gray-light;
+                transform: translateY(-.1rem);
+            }
+            &:active {
+                box-shadow: none;
+                transform: scale(1.01);
+            }
+        }
+
+        @font-face {
+            font-family: calibri;
+            src: url(../fonts/calibri/Calibri.ttf);
+        }
+
+        @font-face {
+            font-family: roboto;
+            src: url(../fonts/Roboto/Roboto-Regular.ttf);
+        }
