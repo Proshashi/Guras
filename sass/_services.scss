@@ -1,11 +1,74 @@
 .services {
-    background-color: orange;
+    // background-color: silver;
+    padding-top: 4.9rem;
     &__heading--1 {
-        padding-top: 4.9rem;
         font-size: 4.2rem;
-        font-weight: 300;
+        font-weight: bold;
         text-transform: uppercase;
         text-align: center;
-        font-family: 'Caibri' sans-serif;
+        font-family: calibri;
+        margin-bottom: 7.4rem;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 4rem;
+        &--card {
+            //  background-color: bisque;
+            border-radius: 10px;
+            width: 40rem;
+            height: 53.7rem;
+            padding: 2.3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            &-1 {
+                border: 3px solid green;
+            }
+            &-2 {
+                border: 3px solid blue;
+            }
+            &-3 {
+                border: 3px solid rgb(207, 95, 224);
+            }
+            &--heading-2 {
+                font-size: 3.2rem;
+            }
+            &-img {
+                height: 15.8rem;
+                width: 18.6rem;
+            }
+            &--service {
+                padding: 0 1rem;
+                &-list {
+                    margin: .5rem;
+                    margin-left: 1rem;
+                    font-family: roboto;
+                    font-weight: 300;
+                    font-size: 1.8rem;
+                }
+                &-line {
+                    color: blue;
+                    width: 285px;
+                }
+            }
+            &-btn {
+                font-size: 1.6rem;
+                padding: .8rem 3rem;
+                border-radius: 26px;
+                background-color: #F3737C;
+                border: none;
+                font-family: roboto;
+                outline: none;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0 3px 6px gray;
+                }
+                &:active {
+                    box-shadow: none;
+                }
+            }
+        }
     }
 }

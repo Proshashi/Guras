@@ -24,20 +24,70 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0.25rem 1rem; }
+  padding: 0.5rem 2rem; }
   .header__nav--links {
     list-style-type: none;
     display: flex;
     font-family: calibri; }
     .header__nav--links-item {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin: 0 1.5rem;
+      font-weight: 600; }
 
 .services {
-  background-color: orange; }
+  padding-top: 4.9rem; }
   .services__heading--1 {
-    padding-top: 4.9rem;
     font-size: 4.2rem;
-    font-weight: 300;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Caibri' sans-serif; }
+    font-family: calibri;
+    margin-bottom: 7.4rem; }
+  .services__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem; }
+    .services__row--card {
+      border-radius: 10px;
+      width: 40rem;
+      height: 53.7rem;
+      padding: 2.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .services__row--card-1 {
+        border: 3px solid green; }
+      .services__row--card-2 {
+        border: 3px solid blue; }
+      .services__row--card-3 {
+        border: 3px solid #cf5fe0; }
+      .services__row--card--heading-2 {
+        font-size: 3.2rem; }
+      .services__row--card-img {
+        height: 15.8rem;
+        width: 18.6rem; }
+      .services__row--card--service {
+        padding: 0 1rem; }
+        .services__row--card--service-list {
+          margin: .5rem;
+          margin-left: 1rem;
+          font-family: roboto;
+          font-weight: 300;
+          font-size: 1.8rem; }
+        .services__row--card--service-line {
+          color: blue;
+          width: 285px; }
+      .services__row--card-btn {
+        font-size: 1.6rem;
+        padding: .8rem 3rem;
+        border-radius: 26px;
+        background-color: #F3737C;
+        border: none;
+        font-family: roboto;
+        outline: none;
+        cursor: pointer; }
+        .services__row--card-btn:hover {
+          box-shadow: 0 3px 6px gray; }
+        .services__row--card-btn:active {
+          box-shadow: none; }
