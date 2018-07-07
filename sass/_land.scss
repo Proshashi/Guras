@@ -31,26 +31,45 @@
   position: relative;
   top: 44px;
   display: flex;
+  font-family: calibri;
   &__info {
-    width: 50%;
+    width: 40vw;
+    padding: 10rem 5rem;
+    &-quote {
+      font-size: 4.4rem;
+      color: $gray-dark;
+      text-align: center;
+    }
+    &-info {
+      font-size: 2rem;
+      color: $gray-dark;
+      text-align: center;
+      margin: 0 0 2rem 0;
+    }
+     &--details {
+        margin: 5rem 1rem;
+        &-item {
+          display: flex;
+          align-items: center;
+          font-size: 2rem;
+          color: $gray-medium-dark;
+          &_telephone {
+            height: 15px;
+            margin: 0 2rem 0 1rem;
+          }
+          &_location {
+            height: 15px;
+            margin: 0 2.5rem 0 1rem;
+          }
+          &_mail {
+            height: 15px;
+            margin: 0 2rem 0 1rem;
+          }
+        }
+    }
   }
   &__img--pic {
     height: 100%;
-  }
-  &__info--details-item {
-    display: flex;
-    align-items: center;
-    &_telephone {
-      height: 15px;
-      margin: 0 2rem 0 1rem;
-    }
-    &_location {
-      height: 15px;
-      margin: 0 2.5rem 0 1rem;
-    }
-    &_mail {
-      height: 15px;
-      margin: 0 2rem 0 1rem;
-    }
+    width: 60vw;
   }
 }
