@@ -86,17 +86,6 @@ body {
           margin: 0 2rem 0 1rem;
           flex-flow: wrap; }
     .main__info__img--pic {
+      margin-top: 5px;
       height: 100%;
       width: 60vw; }
-    .main__info__info--details-item {
-      display: flex;
-      align-items: center; }
-      .main__info__info--details-item_telephone {
-        height: 15px;
-        margin: 0 2rem 0 1rem; }
-      .main__info__info--details-item_location {
-        height: 15px;
-        margin: 0 2.5rem 0 1rem; }
-      .main__info__info--details-item_mail {
-        height: 15px;
-        margin: 0 2rem 0 1rem; }
