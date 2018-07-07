@@ -19,22 +19,54 @@ html {
   font-family: roboto;
   src: url(../fonts/Roboto/Roboto-Regular.ttf); }
 
-.header__nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 2rem; }
-  .header__nav--links {
-    list-style-type: none;
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 99999999;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px #5A5A5A26; }
+  .header__nav {
     display: flex;
-    font-family: calibri; }
-    .header__nav--links-item {
-      font-size: 2rem;
-      margin: 0 1.5rem;
-      font-weight: 600; }
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem; }
+    .header__nav--logo-img {
+      height: 3rem; }
+    .header__nav--links {
+      list-style-type: none;
+      display: flex;
+      font-family: calibri; }
+      .header__nav--links-item {
+        color: #979797;
+        font-size: 1.5rem;
+        margin: 0 1.5rem;
+        font-weight: 600;
+        cursor: pointer; }
+
+.main {
+  position: relative;
+  top: 44px;
+  display: flex; }
+  .main__info {
+    width: 50%; }
+  .main__img--pic {
+    height: 100%; }
+  .main__info--details-item {
+    display: flex;
+    align-items: center; }
+    .main__info--details-item_telephone {
+      height: 15px;
+      margin: 0 2rem 0 1rem; }
+    .main__info--details-item_location {
+      height: 15px;
+      margin: 0 2.5rem 0 1rem; }
+    .main__info--details-item_mail {
+      height: 15px;
+      margin: 0 2rem 0 1rem; }
 
 .services {
+  background-color: #fff;
   padding-top: 4.9rem; }
   .services__heading--1 {
     font-size: 4.2rem;
@@ -42,7 +74,8 @@ html {
     text-transform: uppercase;
     text-align: center;
     font-family: calibri;
-    margin-bottom: 7.4rem; }
+    margin-bottom: 7.4rem;
+    color: #676767; }
   .services__row {
     display: flex;
     justify-content: space-between;
@@ -57,16 +90,18 @@ html {
       justify-content: space-between;
       align-items: center; }
       .services__row--card-1 {
-        border: 3px solid green; }
+        border: 3px solid #2ECC71; }
       .services__row--card-2 {
-        border: 3px solid blue; }
+        border: 3px solid #2980B9; }
       .services__row--card-3 {
-        border: 3px solid #cf5fe0; }
+        border: 3px solid #9B59B6; }
       .services__row--card--heading-2 {
-        font-size: 3.2rem; }
+        font-size: 3.2rem;
+        color: #676767;
+        font-family: calibri; }
       .services__row--card-img {
-        height: 15.8rem;
-        width: 18.6rem; }
+        height: 16.8rem;
+        width: 19.6rem; }
       .services__row--card--service {
         padding: 0 1rem; }
         .services__row--card--service-list {
@@ -74,20 +109,28 @@ html {
           margin-left: 1rem;
           font-family: roboto;
           font-weight: 300;
-          font-size: 1.8rem; }
+          font-size: 1.8rem;
+          color: #979797; }
         .services__row--card--service-line {
-          color: blue;
-          width: 285px; }
+          background-color: rgba(151, 151, 151, 0.5);
+          width: 285px;
+          height: 1px;
+          border: none;
+          outline: none; }
       .services__row--card-btn {
         font-size: 1.6rem;
         padding: .8rem 3rem;
         border-radius: 26px;
         background-color: #F3737C;
+        color: #fff;
         border: none;
         font-family: roboto;
         outline: none;
-        cursor: pointer; }
+        cursor: pointer;
+        transform: scale(1); }
         .services__row--card-btn:hover {
-          box-shadow: 0 3px 6px gray; }
+          box-shadow: 0 5px 20px #979797;
+          transform: translateY(-0.1rem); }
         .services__row--card-btn:active {
-          box-shadow: none; }
+          box-shadow: none;
+          transform: scale(1.01); }

@@ -1,5 +1,5 @@
 .services {
-    // background-color: silver;
+    background-color: #fff;
     padding-top: 4.9rem;
     &__heading--1 {
         font-size: 4.2rem;
@@ -8,13 +8,13 @@
         text-align: center;
         font-family: calibri;
         margin-bottom: 7.4rem;
+        color: $gray-dark;
     }
     &__row {
         display: flex;
         justify-content: space-between;
         padding: 1rem 4rem;
         &--card {
-            //  background-color: bisque;
             border-radius: 10px;
             width: 40rem;
             height: 53.7rem;
@@ -24,20 +24,22 @@
             justify-content: space-between;
             align-items: center;
             &-1 {
-                border: 3px solid green;
+                border: 3px solid $border-green;
             }
             &-2 {
-                border: 3px solid blue;
+                border: 3px solid $border-blue;
             }
             &-3 {
-                border: 3px solid rgb(207, 95, 224);
+                border: 3px solid $border-purple;
             }
             &--heading-2 {
                 font-size: 3.2rem;
+                color: $gray-dark;
+                font-family: calibri;
             }
             &-img {
-                height: 15.8rem;
-                width: 18.6rem;
+                height: 16.8rem;
+                width: 19.6rem;
             }
             &--service {
                 padding: 0 1rem;
@@ -47,10 +49,14 @@
                     font-family: roboto;
                     font-weight: 300;
                     font-size: 1.8rem;
+                    color: $gray-light;
                 }
                 &-line {
-                    color: blue;
+                    background-color: rgba($gray-light, .5);
                     width: 285px;
+                    height: 1px;
+                    border: none;
+                    outline: none;
                 }
             }
             &-btn {
@@ -58,15 +64,19 @@
                 padding: .8rem 3rem;
                 border-radius: 26px;
                 background-color: #F3737C;
+                color: #fff;
                 border: none;
                 font-family: roboto;
                 outline: none;
                 cursor: pointer;
+                transform: scale(1);
                 &:hover {
-                    box-shadow: 0 3px 6px gray;
+                    box-shadow: 0 5px 20px $gray-light;
+                    transform: translateY(-.1rem);
                 }
                 &:active {
                     box-shadow: none;
+                    transform: scale(1.01);
                 }
             }
         }

@@ -1,24 +1,24 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
-  line-height: 1.7;
-  font-weight: 400;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    line-height: 1.7;
+    font-weight: 400;
 }
 
 @font-face {
-  font-family: calibri;
-  src: url(../fonts/calibri/Calibri.ttf);
+    font-family: calibri;
+    src: url(../fonts/calibri/Calibri.ttf);
 }
 
 @font-face {
-  font-family: roboto;
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
