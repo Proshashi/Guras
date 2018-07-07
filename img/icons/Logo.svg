@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 138 63">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Logo);
+      }
+
+      .cls-2 {
+        fill: #f3737c;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 24px;
+      }
+
+      .cls-3 {
+        font-family: Calibri;
+      }
+
+      .cls-4 {
+        fill: #212330;
+        font-family: Calibri-Bold, Calibri;
+        font-weight: 700;
+      }
+    </style>
+    <clipPath id="clip-Logo">
+      <rect width="138" height="63"/>
+    </clipPath>
+  </defs>
+  <g id="Logo" class="cls-1">
+    <rect class="cls-5" width="138" height="63"/>
+    <g id="Group_20" data-name="Group 20" transform="translate(-17.364 3.326)">
+      <g id="Group_1" data-name="Group 1" transform="translate(11.364 4.674)">
+        <path id="Path_1" data-name="Path 1" class="cls-2" d="M30.717,0H13.239L4.5,15.209l8.739,15.209H30.717l8.739-15.209Z" transform="translate(25.5 8.769)"/>
+        <text id="G" class="cls-3" transform="translate(40.002 31)"><tspan x="0" y="0">G</tspan></text>
+        <text id="TECH" class="cls-4" transform="translate(68.636 32.326)"><tspan x="0" y="0">TECH</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

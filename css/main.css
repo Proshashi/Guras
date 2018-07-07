@@ -24,10 +24,12 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0.25rem 1rem; }
+  padding: 0.5rem 2rem; }
   .header__nav--links {
     list-style-type: none;
     display: flex;
     font-family: calibri; }
     .header__nav--links-item {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin: 0 1.5rem;
+      font-weight: 600; }
