@@ -13,12 +13,15 @@
             font-weight: 400;
         }
         
-        @media only screen and (max-width: 86em) {
-            html {
-                font-size: 50%;
-            }
+        body {
+            background-color: #f6f6f6;
         }
         
+        // @media only screen and (max-width: 86em) {
+        //     html {
+        //         // font-size: 50%;
+        //     }
+        // }
         a {
             &:link,
             &:visited,
