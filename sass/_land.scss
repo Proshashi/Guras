@@ -1,40 +1,45 @@
 .header {
-  position: fixed;
-  width: 100%;
-  z-index: 99999999;
-  background-color: #fff;
-  box-shadow: 0px 2px 6px #5A5A5A26;
-  &__nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 2rem;
-    &--logo-img {
-      height: 3rem;
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px #5A5A5A26;
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 2rem;
+        &--logo-img {
+            height: 3rem;
+        }
+        &--links {
+            list-style-type: none;
+            display: flex;
+            font-family: calibri;
+            &-item {
+                color: $gray-light;
+                font-size: 1.5rem;
+                margin: 0 1.5rem;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
     }
-    &--links {
-      list-style-type: none;
-      display: flex;
-      font-family: calibri;
-      &-item {
-        color: $gray-light;
-        font-size: 1.5rem;
-        margin: 0 1.5rem;
-        font-weight: 600;
-        cursor: pointer;
-      }
-    }
-  }
 }
+
 .main {
   position: relative;
   top: 44px;
   display: flex;
   font-family: calibri;
+  overflow: hidden;
   &__info {
     width: 40vw;
     padding: 10rem 5rem;
+    &--services-btn {
+      margin: 0 5rem;
+    }
     &-quote {
       font-size: 4.4rem;
       color: $gray-dark;
@@ -45,6 +50,7 @@
       color: $gray-dark;
       text-align: center;
       margin: 0 0 2rem 0;
+      width: 40vw;
     }
      &--details {
         margin: 5rem 1rem;
@@ -64,12 +70,30 @@
           &_mail {
             height: 15px;
             margin: 0 2rem 0 1rem;
+            flex-flow: wrap;
           }
         }
     }
-  }
-  &__img--pic {
-    height: 100%;
-    width: 60vw;
+
+    &__img--pic {
+        height: 100%;
+        width: 60vw;
+    }
+    &__info--details-item {
+        display: flex;
+        align-items: center;
+        &_telephone {
+            height: 15px;
+            margin: 0 2rem 0 1rem;
+        }
+        &_location {
+            height: 15px;
+            margin: 0 2.5rem 0 1rem;
+        }
+        &_mail {
+            height: 15px;
+            margin: 0 2rem 0 1rem;
+        }
+    }
   }
 }
