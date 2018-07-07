@@ -1,0 +1,17 @@
+.services {
+  background-color: orange; }
+  .services__heading--1 {
+    padding-top: 4.9rem;
+    font-size: 4.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Caibri' sans-serif; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
