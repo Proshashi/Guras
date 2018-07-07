@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  line-height: 1.7;
+  font-weight: 400; }
+
+@font-face {
+  font-family: calibri;
+  src: url(../fonts/calibri/Calibri.ttf); }
+
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf); }
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 1rem; }
+  .header__nav--links {
+    list-style-type: none;
+    display: flex;
+    font-family: calibri; }
+    .header__nav--links-item {
+      font-size: 2rem; }

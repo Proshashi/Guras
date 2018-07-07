@@ -1,0 +1,15 @@
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+  &--links {
+    list-style-type: none;
+    display: flex;
+    font-family: calibri;
+    &-item {
+      font-size: 2rem;
+    }
+  }
+}
