@@ -29,7 +29,9 @@ a:link, a:visited, a:active, a:hover {
   font-family: roboto;
   src: url(../fonts/Roboto/Roboto-Regular.ttf); }
 
-.btn:link, .btn:visited {
+.btn,
+.btn:link,
+.btn:visited {
   font-size: 1.6rem;
   padding: .8rem 3rem;
   border-radius: 26px;
@@ -41,14 +43,16 @@ a:link, a:visited, a:active, a:hover {
   cursor: pointer;
   transform: scale(1);
   display: inline-block; }
-
-.btn:hover {
-  box-shadow: 0 5px 20px #979797;
-  transform: translateY(-0.1rem); }
-
-.btn:active {
-  box-shadow: none;
-  transform: scale(0.99); }
+  .btn:hover,
+  .btn:link:hover,
+  .btn:visited:hover {
+    box-shadow: 0 5px 20px #979797;
+    transform: translateY(-0.1rem); }
+  .btn:active,
+  .btn:link:active,
+  .btn:visited:active {
+    box-shadow: none;
+    transform: scale(0.99); }
 
 .heading--1 {
   font-size: 4.2rem;
@@ -266,3 +270,90 @@ a:link, a:visited, a:active, a:hover {
         font-size: 1.8rem;
         text-align: center;
         font-family: roboto; }
+
+.subscribe {
+  padding: 4.9rem 3rem 4.9rem 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 900px) {
+    .subscribe {
+      padding: 4.9rem 3rem;
+      flex-wrap: wrap-reverse;
+      align-content: center; } }
+  .subscribe__description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 5vw; }
+    .subscribe__description--heading-3 {
+      color: #2C3E50;
+      font-family: roboto;
+      font-size: 4.2rem;
+      font-weight: 600;
+      margin-bottom: -2.75rem;
+      letter-spacing: .1rem; }
+      @media only screen and (max-width: 1200px) {
+        .subscribe__description--heading-3 {
+          font-size: 3rem;
+          margin-bottom: -1.5rem; } }
+      @media only screen and (max-width: 550px) {
+        .subscribe__description--heading-3 {
+          font-size: 2.75rem;
+          letter-spacing: -.1rem; } }
+      @media only screen and (max-width: 450px) {
+        .subscribe__description--heading-3 {
+          font-size: 2.5rem;
+          letter-spacing: -.1rem; } }
+    .subscribe__description--paragraph {
+      margin: 4rem 0;
+      font-family: roboto;
+      font-size: 2rem;
+      color: #535353; }
+    .subscribe__description--form-email {
+      font-size: 1.6rem;
+      padding: .8rem 1.5rem;
+      margin-right: 1rem;
+      outline: none;
+      border: 1px solid #979797;
+      border-radius: 3px;
+      color: #999; }
+      .subscribe__description--form-email:focus {
+        border-bottom: 2px solid red;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+      .subscribe__description--form-email:valid {
+        border-bottom: 2px solid green; }
+      @media only screen and (max-width: 500px) {
+        .subscribe__description--form-email {
+          width: 85%; } }
+    @media only screen and (max-width: 500px) {
+      .subscribe__description--form-btn {
+        margin-top: 1.25rem;
+        width: 40%; } }
+    @media only screen and (max-width: 500px) {
+      .subscribe__description--form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+  .subscribe__img {
+    height: 40rem;
+    width: 40rem;
+    position: relative; }
+    @media only screen and (max-width: 900px) {
+      .subscribe__img {
+        height: 30rem;
+        width: 30rem;
+        left: 32%; } }
+    @media only screen and (max-width: 700px) {
+      .subscribe__img {
+        left: 20vw; } }
+    @media only screen and (max-width: 550px) {
+      .subscribe__img {
+        left: 15vw; } }
+    @media only screen and (max-width: 500px) {
+      .subscribe__img {
+        left: 12vw; } }
+    @media only screen and (max-width: 350px) {
+      .subscribe__img {
+        left: 7vw; } }
