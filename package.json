@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.9.1"
+    "node-sass": "^4.9.1",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.3"
   },
   "devDependencies": {},
   "scripts": {
-    "compile-sass": "node-sass ./sass/main.scss ./css/main.css -w"
+    "compile-sass": "node-sass ./sass/main.scss ./css/main.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver compile-sass"
   },
   "author": "",
   "license": "ISC"

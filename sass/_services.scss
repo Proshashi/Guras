@@ -1,23 +1,13 @@
 .services {
     background-color: #fff;
     padding-top: 4.9rem;
-    &__heading--1 {
-        font-size: 4.2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: calibri;
-        margin-bottom: 7.4rem;
-        color: $gray-dark;
-    }
     &__row {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: space-between;
-        // margin: 0 3rem;
-        padding: 1rem 5rem;
+        justify-content: space-around;
+        align-items: center;
         &--card {
-            margin: 0 3.25rem;
+            margin: 0 .15rem 4.25rem .15rem;
             border-radius: 10px;
             width: 35rem;
             height: 53.7rem;
@@ -35,11 +25,6 @@
             &-3 {
                 border: 3px solid $border-purple;
             }
-            &--heading-2 {
-                font-size: 3.2rem;
-                color: $gray-dark;
-                font-family: calibri;
-            }
             &-img {
                 height: 16.8rem;
                 width: 19.6rem;
@@ -56,7 +41,7 @@
                 }
                 &-line {
                     background-color: rgba($gray-light, .5);
-                    width: 285px;
+                    width: 28.5rem;
                     height: 1px;
                     border: none;
                     outline: none;

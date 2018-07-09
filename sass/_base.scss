@@ -17,38 +17,18 @@
             background-color: #f6f6f6;
         }
         
-        // @media only screen and (max-width: 86em) {
-        //     html {
-        //         // font-size: 50%;
-        //     }
-        // }
+        @media only screen and (max-width: 28.25em) {
+            html {
+                font-size: 50%;
+            }
+        }
+        
         a {
             &:link,
             &:visited,
             &:active,
             &:hover {
                 text-decoration: none;
-            }
-        }
-        
-        .btn {
-            font-size: 1.6rem;
-            padding: .8rem 3rem;
-            border-radius: 26px;
-            background-color: #F3737C;
-            color: #fff;
-            border: none;
-            font-family: roboto;
-            outline: none;
-            cursor: pointer;
-            transform: scale(1);
-            &:hover {
-                box-shadow: 0 5px 20px $gray-light;
-                transform: translateY(-.1rem);
-            }
-            &:active {
-                box-shadow: none;
-                transform: scale(1.01);
             }
         }
         
