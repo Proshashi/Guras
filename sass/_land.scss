@@ -116,34 +116,3 @@
         height: 100%;
     }
 }
-
-.header {
-    position: fixed;
-    width: 100%;
-    z-index: 99999999;
-    background-color: #fff;
-    box-shadow: 0px 2px 6px #5A5A5A26;
-    &__newNav {
-        background-color: #ccc;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        z-index: 999999999999999999999;
-        &--links {
-            list-style-type: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: calibri;
-            &-item {
-                color: $gray-light;
-                font-size: 1.5rem;
-                margin: 1rem 0;
-                font-weight: 600;
-                cursor: pointer;
-            }
-        }
-    }
-}

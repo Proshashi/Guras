@@ -216,33 +216,6 @@ a:link, a:visited, a:active, a:hover {
   .main__img--pic {
     height: 100%; }
 
-.header {
-  position: fixed;
-  width: 100%;
-  z-index: 99999999;
-  background-color: #fff;
-  box-shadow: 0px 2px 6px #5A5A5A26; }
-  .header__newNav {
-    background-color: #ccc;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: 999999999999999999999; }
-    .header__newNav--links {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-family: calibri; }
-      .header__newNav--links-item {
-        color: #979797;
-        font-size: 1.5rem;
-        margin: 1rem 0;
-        font-weight: 600;
-        cursor: pointer; }
-
 .services {
   background-color: #fff;
   padding-top: 4.9rem; }
