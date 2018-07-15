@@ -5,38 +5,39 @@
             padding: 0;
             box-sizing: inherit;
         }
-        
+
         html {
             font-size: 62.5%;
             box-sizing: border-box;
             line-height: 1.7;
             font-weight: 400;
         }
-        
+
         body {
             background-color: #f6f6f6;
         }
-        
+
         @media only screen and (max-width: 28.25em) {
             html {
                 font-size: 50%;
             }
         }
-        
+
         a {
             &:link,
             &:visited,
             &:active,
             &:hover {
                 text-decoration: none;
+                color: inherit;
             }
         }
-        
+
         @font-face {
             font-family: calibri;
             src: url(../fonts/calibri/Calibri.ttf);
         }
-        
+
         @font-face {
             font-family: roboto;
             src: url(../fonts/Roboto/Roboto-Regular.ttf);
