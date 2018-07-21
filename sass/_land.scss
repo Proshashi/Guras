@@ -36,19 +36,6 @@
                 margin: 0 1.5rem;
                 font-weight: 600;
                 cursor: pointer;
-                @media only screen and (max-width: 1000px) {
-                    display: none;
-                }
-            }
-        }
-        &--toggler {
-            display: none;
-            @media only screen and (max-width: 1000px) {
-                display: inline-block;
-            }
-            &-img {
-                width: 2.25rem;
-                cursor: pointer;
             }
         }
     }

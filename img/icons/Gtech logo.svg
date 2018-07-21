@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 95 33">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Gtech_logo);
+      }
+
+      .cls-2 {
+        fill: #ee202e;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 24px;
+      }
+
+      .cls-3 {
+        font-family: Calibri;
+      }
+
+      .cls-4 {
+        fill: #212330;
+        font-family: Calibri-Bold, Calibri;
+        font-weight: 700;
+      }
+    </style>
+    <clipPath id="clip-Gtech_logo">
+      <rect width="95" height="33"/>
+    </clipPath>
+  </defs>
+  <g id="Gtech_logo" data-name="Gtech logo" class="cls-1">
+    <rect class="cls-5" width="95" height="33"/>
+    <g id="Group_25" data-name="Group 25" transform="translate(-38.364 -11.674)">
+      <path id="Path_1" data-name="Path 1" class="cls-2" d="M30.717,0H13.239L4.5,15.209l8.739,15.209H30.717l8.739-15.209Z" transform="translate(36.864 13.443)"/>
+      <text id="G" class="cls-3" transform="translate(51.366 35.674)"><tspan x="0" y="0">G</tspan></text>
+      <text id="TECH" class="cls-4" transform="translate(80 37)"><tspan x="0" y="0">TECH</tspan></text>
+    </g>
+  </g>
+</svg>

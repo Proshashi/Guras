@@ -99,7 +99,7 @@ a:link, a:visited, a:active, a:hover {
       flex-direction: column; } }
 
 .copyright {
-  color: white;
+  color: #ccc;
   font-size: 1.5rem;
   margin-left: 4rem; }
   @media only screen and (max-width: 800px) {
@@ -111,7 +111,8 @@ a:link, a:visited, a:active, a:hover {
 .footer__socialmedia {
   display: flex;
   justify-content: space-between;
-  align-content: center; }
+  align-content: center;
+  margin-right: 4rem; }
 
 .view {
   display: none; }
@@ -151,30 +152,14 @@ a:link, a:visited, a:active, a:hover {
         margin: 0 1.5rem;
         font-weight: 600;
         cursor: pointer; }
-        @media only screen and (max-width: 1000px) {
-          .header__nav--links-item {
-            display: none; } }
-    .header__nav--toggler {
-      display: none; }
-      @media only screen and (max-width: 1000px) {
-        .header__nav--toggler {
-          display: inline-block; } }
-      .header__nav--toggler-img {
-        width: 2.25rem;
-        cursor: pointer; }
 
 .main {
   height: 100vh;
   font-family: calibri;
   overflow: hidden;
-<<<<<<< HEAD
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 46%, transparent 46%), url(../img/Images/workplace-1245776_1920.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 46%, transparent 46%), url("../img/Images/workplace-1245776_1920.jpg");
   background-size: cover;
   background-attachment: fixed; }
-=======
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 46%, transparent 46%), url("../img/Images/workplace-1245776_1920.jpg");
-  background-size: cover; }
->>>>>>> 14bc84e52c39336afd16a8f63a2a8a2aff706475
   @media only screen and (max-width: 1000px) {
     .main {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, transparent 100%), url("../img/Images/workplace-1245776_1920.jpg"); } }
@@ -255,7 +240,7 @@ a:link, a:visited, a:active, a:hover {
       @media only screen and (max-width: 1000px) {
         .services__row--card {
           width: calc(49% - 2.5rem); } }
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: 650px) {
         .services__row--card {
           width: calc(90% - 2.5rem); } }
       .services__row--card:hover {
@@ -278,19 +263,21 @@ a:link, a:visited, a:active, a:hover {
           font-weight: 300;
           font-size: 1.8rem;
           color: #979797; }
+          @media only screen and (max-width: 700px) {
+            .services__row--card--service-list {
+              font-size: 1.5rem; } }
           @media only screen and (max-width: 400px) {
             .services__row--card--service-list {
-              font-size: 1.5rem;
-              margin: 0; } }
+              font-size: 1.2rem; } }
         .services__row--card--service-line {
           background-color: rgba(151, 151, 151, 0.5);
           width: 28.5rem;
           height: 1px;
           border: none;
           outline: none; }
-          @media only screen and (max-width: 400px) {
+          @media only screen and (max-width: 700px) {
             .services__row--card--service-line {
-              width: 100%; } }
+              width: 110%; } }
 
 .features {
   background-color: #f6f6f6;
