@@ -15,7 +15,8 @@ body {
   background-color: #f6f6f6; }
 
 a:link, a:visited, a:active, a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 @font-face {
   font-family: calibri;
@@ -112,6 +113,9 @@ a:link, a:visited, a:active, a:hover {
   justify-content: space-between;
   align-content: center; }
 
+.view {
+  display: none; }
+
 .header {
   position: fixed;
   width: 100%;
@@ -126,10 +130,21 @@ a:link, a:visited, a:active, a:hover {
     padding: 0.5rem 2rem; }
     .header__nav--logo-img {
       height: 3rem; }
+    .header__nav--bars {
+      display: none; }
+      @media only screen and (max-width: 800px) {
+        .header__nav--bars {
+          display: inline-block; } }
+      .header__nav--bars-img {
+        height: 3rem;
+        cursor: pointer; }
     .header__nav--links {
       list-style-type: none;
       display: flex;
       font-family: calibri; }
+      @media only screen and (max-width: 800px) {
+        .header__nav--links {
+          display: none; } }
       .header__nav--links-item {
         color: #979797;
         font-size: 1.5rem;
@@ -152,12 +167,17 @@ a:link, a:visited, a:active, a:hover {
   height: 100vh;
   font-family: calibri;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 46%, transparent 46%), url(../img/Images/workplace-1245776_1920.jpg);
   background-size: cover;
   background-attachment: fixed; }
+=======
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 46%, transparent 46%), url("../img/Images/workplace-1245776_1920.jpg");
+  background-size: cover; }
+>>>>>>> 14bc84e52c39336afd16a8f63a2a8a2aff706475
   @media only screen and (max-width: 1000px) {
     .main {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, transparent 100%), url(../img/Images/workplace-1245776_1920.jpg); } }
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, transparent 100%), url("../img/Images/workplace-1245776_1920.jpg"); } }
   .main__info {
     width: 50vw;
     padding: 8rem 5rem; }

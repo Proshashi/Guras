@@ -13,7 +13,20 @@
         &--logo-img {
             height: 3rem;
         }
+        &--bars {
+            display: none;
+            @media only screen and (max-width: 800px) {
+                display: inline-block;
+            }
+            &-img {
+                height: 3rem;
+                cursor: pointer;
+            }
+        }
         &--links {
+            @media only screen and (max-width: 800px) {
+                display: none;
+            }
             list-style-type: none;
             display: flex;
             font-family: calibri;
@@ -45,11 +58,11 @@
     height: 100vh;
     font-family: calibri;
     overflow: hidden;
-    background-image: linear-gradient(105deg, rgba(white, .9) 0%, rgba(white, .9) 46%, transparent 46%), url(../img/Images/workplace-1245776_1920.jpg);
+    background-image: linear-gradient(105deg, rgba(white, .9) 0%, rgba(white, .9) 46%, transparent 46%), url("../img/Images/workplace-1245776_1920.jpg");
     background-size: cover;
     background-attachment: fixed;
     @media only screen and (max-width: 1000px) {
-        background-image: linear-gradient(105deg, rgba(white, .8) 0%, rgba(white, .8) 100%, transparent 100%), url(../img/Images/workplace-1245776_1920.jpg);
+        background-image: linear-gradient(105deg, rgba(white, .8) 0%, rgba(white, .8) 100%, transparent 100%), url("../img/Images/workplace-1245776_1920.jpg");
     }
     &__info {
         width: 50vw;
