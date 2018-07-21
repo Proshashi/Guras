@@ -58,6 +58,7 @@
     &__icons {
         height: 3rem;
         width: 3rem;
+        margin-right: 2rem;
     }
     &__img {
         height: 3rem;
@@ -81,9 +82,8 @@
     }
 }
 
-.socialmedia {
+.footer__socialmedia {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin-right: 4rem;
 }

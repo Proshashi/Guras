@@ -23,6 +23,19 @@
                 margin: 0 1.5rem;
                 font-weight: 600;
                 cursor: pointer;
+                @media only screen and (max-width: 1000px) {
+                    display: none;
+                }
+            }
+        }
+        &--toggler {
+            display: none;
+            @media only screen and (max-width: 1000px) {
+                display: inline-block;
+            }
+            &-img {
+                width: 2.25rem;
+                cursor: pointer;
             }
         }
     }
@@ -34,6 +47,7 @@
     overflow: hidden;
     background-image: linear-gradient(105deg, rgba(white, .9) 0%, rgba(white, .9) 46%, transparent 46%), url(../img/Images/workplace-1245776_1920.jpg);
     background-size: cover;
+    background-attachment: fixed;
     @media only screen and (max-width: 1000px) {
         background-image: linear-gradient(105deg, rgba(white, .8) 0%, rgba(white, .8) 100%, transparent 100%), url(../img/Images/workplace-1245776_1920.jpg);
     }
@@ -66,10 +80,10 @@
         &--details {
             margin: 5rem 1rem;
             @media only screen and (max-width: 1000px) {
-                margin: 5rem 35%;
+                margin: 5rem 32%;
             }
             @media only screen and (max-width: 800px) {
-                margin: 5rem 25%;
+                margin: 5rem 24%;
             }
             @media only screen and (max-width: 550px) {
                 margin: 5rem 15%;
@@ -80,26 +94,26 @@
                 font-size: 2rem;
                 color: $gray-medium-dark;
                 &_telephone {
-                    height: 15px;
+                    height: 20px;
                     margin: 0 2rem 0 1rem;
                 }
                 &_location {
-                    height: 15px;
+                    height: 20px;
                     margin: 0 2.5rem 0 1rem;
                 }
                 &_mail {
-                    height: 15px;
+                    height: 18px;
                     margin: 0 2rem 0 1rem;
                     flex-flow: wrap;
                 }
+                & span {
+                    font-family: lato;
+                    font-weight: 600;
+                    @media only screen and (max-width: 550px) {
+                        font-size: 1.6rem;
+                    }
+                }
             }
         }
-    }
-}
-
-.main__img {
-    width: 60vw;
-    &--pic {
-        height: 100%;
     }
 }

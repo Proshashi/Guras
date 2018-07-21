@@ -9,13 +9,22 @@
         &--card {
             margin: 0 .15rem 4.25rem .15rem;
             border-radius: 10px;
-            width: 35rem;
+            width: calc(33% - 2.5rem);
             height: 53.7rem;
             padding: 2.3rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            @media only screen and (max-width: 1000px) {
+                width: calc(49% - 2.5rem);
+            }
+            @media only screen and (max-width:700px) {
+                width: calc(90% - 2.5rem);
+            }
+            &:hover {
+                box-shadow: 0 5px 20px rgba(black, .5);
+            }
             &-1 {
                 border: 3px solid $border-green;
             }
@@ -38,6 +47,10 @@
                     font-weight: 300;
                     font-size: 1.8rem;
                     color: $gray-light;
+                    @media only screen and (max-width: 400px) {
+                        font-size: 1.5rem;
+                        margin: 0;
+                    }
                 }
                 &-line {
                     background-color: rgba($gray-light, .5);
@@ -45,6 +58,9 @@
                     height: 1px;
                     border: none;
                     outline: none;
+                    @media only screen and (max-width: 400px) {
+                        width: 100%;
+                    }
                 }
             }
         }

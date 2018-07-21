@@ -7,13 +7,16 @@
         justify-content: space-around;
         align-items: center;
         &--card {
-            width: 35rem;
+            width: calc(33% - 2.5rem);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            padding: 2.3rem;
+            padding: 2.3rem 0;
             margin: 0 .15rem 4.25rem .15rem;
+            @media only screen and (max-width: 750px) {
+                width: calc(95%);
+            }
             &-img {
                 height: 16.8rem;
                 width: 16.8rem;
